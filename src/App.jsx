@@ -8,7 +8,7 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Faqs from "./components/Faqs";
 import Cards from "./components/Cards";
-import Cart from "./components/Cart";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <Slider />
       <About />
       <Cards />
+      <Contact />
       <Faqs />
-      <Cart />
       <Footer />
     </>
   );

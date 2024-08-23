@@ -47,7 +47,7 @@ const Faqs = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1 col-md-12 col-12">
               <h2 className="pb-2 border-bottom text-center">
-                <a id="faqs">Frequently Asked Question</a>
+                <a id="faq">Frequently Asked Question</a>
               </h2>
             </div>
           </div>

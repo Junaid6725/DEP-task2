@@ -16,8 +16,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#" className="nav-link p-0 text-body-secondary">
-                    Features
+                  <a
+                    href="#contact"
+                    className="nav-link p-0 text-body-secondary"
+                  >
+                    Contact
                   </a>
                 </li>
                 <li className="nav-item mb-2">
@@ -29,7 +32,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="nav-item mb-2">
-                  <a href="#faqs" className="nav-link p-0 text-body-secondary">
+                  <a href="#faq" className="nav-link p-0 text-body-secondary">
                     FAQs
                   </a>
                 </li>

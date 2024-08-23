@@ -8,51 +8,51 @@ const Cards = () => {
   const carddata = [
     {
       id: 1,
-      img: "../images/01.png",
+      img: "../images/01.jpg",
       title: "Samsung Galaxy S Ultra",
-      description: "$50k",
+      price: "50",
     },
     {
       id: 2,
-      img: "../images/02.png",
+      img: "../images/02.jpg",
       title: "Samsung Galaxy S Series",
-      description: "$75k",
+      price: "75",
     },
     {
       id: 3,
-      img: "../images/03.png",
+      img: "../images/03.jpg",
       title: "Samsung Galaxy Flip",
-      description: "$95k",
+      price: "95",
     },
     {
       id: 4,
-      img: "../images/04.png",
+      img: "../images/04.jpg",
       title: "Samsung Galaxy Fold",
-      description: "$120k",
+      price: "120",
     },
     {
       id: 5,
-      img: "../images/05.png",
+      img: "../images/05.jpg",
       title: "Samsung Galaxy Tab",
-      description: "$30k",
+      price: "350",
     },
     {
       id: 6,
-      img: "../images/06.png",
+      img: "../images/06.jpg",
       title: "Samsung Galaxy Watch",
-      description: "$20k",
+      price: "120",
     },
     {
       id: 7,
-      img: "../images/07.png",
+      img: "../images/07.jpg",
       title: "Samsung Book Series",
-      description: "$110k",
+      price: "110",
     },
     {
       id: 8,
-      img: "../images/08.png",
+      img: "../images/08.jpg",
       title: "Samsung Accessories",
-      description: "$10k-$25k",
+      price: "250",
     },
   ];
   const onAdd = (data) => {
@@ -85,27 +85,29 @@ const Cards = () => {
   return (
     <>
       <div className="container">
-        <h2 className="pb-2 border-bottom text-center">
-          <a id="datas">datas</a>
+        <h2 className="pb-2 border-bottom text-center" id="products">
+          Products
         </h2>
         <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
           {carddata.map((data) => {
             return (
               <div className="col-lg-3 " key={data.id}>
                 <div className="card card-img">
-                  <img src={data.img} className="card-img-top " alt="..." />
+                  <img
+                    src={data.img}
+                    className="card-img-top "
+                    alt="Product Pics"
+                  />
                   <div className="card-body cart-text">
                     <h5 className="card-title">{data.title}</h5>
-                    <p className="card-text text-center lead">
-                      {data.description}
-                    </p>
+                    <p className="card-text text-center lead">${data.price}</p>
                   </div>
                   <div className="card-footer d-flex justify-content-center">
-                    <button className="btn btn-success px-4 " onClick={onAdd}>
-                      Add
-                    </button>
-                    <button className="btn btn-danger mx-3" onClick={onRemove}>
-                      Remove
+                    <button
+                      className="btn btn-success "
+                      onClick={() => onAdd(data)}
+                    >
+                      Add to cart
                     </button>
                   </div>
                 </div>
@@ -125,7 +127,7 @@ const Cards = () => {
             )}
           </div>
         ) : (
-          <button className="btnCart text-center" onClick={viewCart}>
+          <button className="btn btn-dark text-center" onClick={viewCart}>
             View Cart
           </button>
         )}

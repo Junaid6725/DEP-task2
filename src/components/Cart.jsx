@@ -5,19 +5,19 @@ const Cart = ({ cart, onAdd, onRemove }) => {
     (a, c) => a + parseInt(c.qty) * parseFloat(c.price),
     0
   );
-  const taxRate = itemsPrice * 0.2;
+  const taxRate = itemsPrice * 0.1;
   const shippingPrice = 50;
   const totalPrice = itemsPrice + taxRate + shippingPrice;
 
   return (
     <div className="container">
-      <h2 className="cart-heading">Your Cart</h2>
+      <h2 className="cart-heading text-center">Your Cart</h2>
       <hr />
       {cart.map((item) => {
         return (
           <div className="row">
             <div className="col-3">{item.title}</div>
-            <div className="col-2">{item.price}</div>
+            <div className="col-2">${item.price}</div>
             <div className="col-3">
               Calculations: {item.qty} x {item.price}
             </div>

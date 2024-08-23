@@ -37,25 +37,20 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#team">
-                  Team
+                <a className="nav-link" href="#faq">
+                  FAQs
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">
+                  Contact
                 </a>
               </li>
             </ul>
             <form
               className="d-flex col-lg-3 justify-content-lg-end"
               role="search"
-            >
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            ></form>
           </div>
         </div>
       </nav>

@@ -28,13 +28,25 @@ const Slider = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="../images/01.jpg" className=" img-fluid " alt="..." />
+            <img
+              src="../images/Slider/01.jpg"
+              className=" img-fluid "
+              alt="Slider Image 01"
+            />
           </div>
           <div className="carousel-item">
-            <img src="../images/02.jpg" className=" img-fluid" alt="..." />
+            <img
+              src="../images/Slider02.jpg"
+              className=" img-fluid"
+              alt="Slider Image 02"
+            />
           </div>
           <div className="carousel-item">
-            <img src="../images/03.jpg" className=" img-fluid" alt="..." />
+            <img
+              src="../images/Slider/03.jpg"
+              className=" img-fluid"
+              alt="Slider Image 03"
+            />
           </div>
         </div>
         <button
