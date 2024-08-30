@@ -36,7 +36,7 @@ const Slider = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="../images/Slider02.jpg"
+              src="../images/Slider/02.jpg"
               className=" img-fluid"
               alt="Slider Image 02"
             />
